@@ -14,7 +14,7 @@ class Route1 {
     fun route(): RouterFunction<ServerResponse> =
         RouterFunctions.route()
             .GET("/hello") {
-                ServerResponse.ok().bodyValue("Hello World2")
+                ServerResponse.ok().bodyValue("Hello World")
             }
             .GET("/hello/{name}") {
                 val message = "Hello ${it.pathVariable("name")}"
