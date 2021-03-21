@@ -11,7 +11,7 @@ import org.springframework.web.reactive.function.server.ServerResponse
 class Route2 {
 
     @Bean
-    fun hiRoute(): RouterFunction<ServerResponse> =
+    fun predicateRoute(): RouterFunction<ServerResponse> =
         RouterFunctions.route()
             .GET("/hi", {
                 val userId = it.headers().firstHeader("x-user-id")
